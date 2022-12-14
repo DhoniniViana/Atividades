@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+    <canvas width="1280" height="720"></canvas>
+    
+    <script>
+        
+        //variavel que chama a API canvas
+        var tela = document.querySelector("canvas");
+        //variavel chama o pincel em 2d
+        var pincel = tela.getContext("2d");
+
+        //Define a cor do pincel
+        pincel.fillStyle = "red";
+        //define conde os eixo X e Y começam e terminam respectivamente
+        pincel.fillRect(0, 0 , 200, 400);
+
+        pincel.fillStyle = "white";
+        pincel.fillRect(200, 0 , 200, 400);
+        
+        pincel.fillStyle = "blue";
+        pincel.fillRect(400, 0 , 200, 400);
+
+
+
+
+    </script>
