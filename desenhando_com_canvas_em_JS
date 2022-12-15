@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-    <canvas width="1280" height="720"></canvas>
+    <canvas width="600" height="400"></canvas>
     
     <script>
         
@@ -8,18 +8,27 @@
         //variavel chama o pincel em 2d
         var pincel = tela.getContext("2d");
 
+//COORDENADAS DE TENTAGULO
         //Define a cor do pincel
         pincel.fillStyle = "red";
         //define conde os eixo X e Y começam e terminam respectivamente
         pincel.fillRect(0, 0 , 200, 400);
-
         pincel.fillStyle = "white";
         pincel.fillRect(200, 0 , 200, 400);
-        
         pincel.fillStyle = "blue";
         pincel.fillRect(400, 0 , 200, 400);
 
 
-
+// CORDENADAS DE UM TRIANGULO
+        pincel.fillStyle = "black";
+        //inicia a escrita do caminho
+        pincel.beginPath();
+        //mover o pincel ate a posição inicial
+        pincel.moveTo(300, 200);
+        //traçar uma linha com o pincel até outros pontos
+        pincel.lineTo(200, 400);
+        pincel.lineTo(400, 400);
+        //preenche a aréa percorrida com o pincel
+        pincel.fill();
 
     </script>
